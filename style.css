@@ -41,6 +41,7 @@
         /* background: red; */
     }
     .btn_content{
+        text-align: center;
         width: 100%;
         height: 76vh;
         border-radius: 21px 21px 0px 0px;
@@ -72,16 +73,12 @@
     
     .coloRed{
         color: #FF6060;
+        font-size: 1.2em;
     }
     .colorBlue{
         color: #00B0D7;
-    }
-   
-    .styleX{
-        color: #00B0D7;
-        font-size: 1.2em;
-        transform: rotate(90deg);
         
     }
+
     
 }
