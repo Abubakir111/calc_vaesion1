@@ -58,6 +58,7 @@
         background: none;
         color: #fff
     }
+   
     .scrol{
         width: 102px;
         height: 7px;
@@ -68,11 +69,19 @@
         border: 3px solid #C4C4C4
        
     }
+    
     .coloRed{
         color: #FF6060;
     }
     .colorBlue{
         color: #00B0D7;
+    }
+   
+    .styleX{
+        color: #00B0D7;
+        font-size: 1.2em;
+        transform: rotate(90deg);
+        
     }
     
 }
