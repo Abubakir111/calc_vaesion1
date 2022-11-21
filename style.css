@@ -43,9 +43,9 @@
     .btn_content{
         margin: auto;
         width: 100%;
-        height: 74vh;
+        height: 75.5vh;
         border-radius: 21px 21px 0px 0px;
-        background: #001B2F;
+        background: rgb(0, 27, 47);
 
     }
     .btn{
@@ -63,11 +63,11 @@
     .scrol{
         width: 102px;
         height: 7px;
-        left: 106px;
+        left: 122px;
         bottom: 11px;
-        background:  #C4C4C4;
+        background: #C4C4C4;
         position: absolute;
-        border: 3px solid #C4C4C4
+        border: 3px solid #C4C4C4;
        
     }
     
