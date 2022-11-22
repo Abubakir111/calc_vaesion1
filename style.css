@@ -18,9 +18,31 @@
       text-align: end;
       width: 100%;
       height: 181px;
-      background:#00223A ;
+      /* background:#00223A ; */
       position: relative;
     
+    }
+    .daytime_mode{
+        width: 55px;
+        height: 61px;
+        /* background: blue; */
+        font-size: 2.5em;
+        text-align: left;
+        padding-left: 10px;
+        padding-top: 0px;
+        color: #fff;
+        display: block;
+    }
+    .night_mode{
+        width: 58px;
+        height: 57px;
+        font-size: 2.5em;
+        text-align: left;
+        padding-left: 20px;
+        padding-top: 0px;
+        color: black;
+        /* background: red; */
+        display: none;
     }
     
     .operation{
@@ -75,7 +97,9 @@
         color: #fff;
         border: none;
     }
-   
+   .black{
+     color:black;
+   }
     .scrol{
         width: 102px;
         height: 7px;

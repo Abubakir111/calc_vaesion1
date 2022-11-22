@@ -1,13 +1,16 @@
+let calc = document.querySelector(".calc");
 let btn_content = document.querySelector(".btn_content");
+let b1 = document.querySelectorAll("#b1");
+let daytime_mode = document.querySelector(".daytime_mode");
 let result = document.querySelector(".result");
 let operation = document.querySelector(".operation");
+let night_mode = document.querySelector(".night_mode");
 let target;
 
 btn_content.addEventListener("click",(event)=>{
  
     if(!event.target.classList.contains("btn")) return;
     target = event.target.innerText;
-     console.log(target);
 
      switch(target){
          case "C":
@@ -58,8 +61,40 @@ btn_content.addEventListener("click",(event)=>{
              default:
                 result.innerText += target;
         }
-    
-    
-   
 
 });
+daytime_mode.addEventListener("click",()=>{
+    changed_themes_to_day_mode("block","#FAFAFA","black","black","#E9F6FF","black" ,"none");
+   
+});
+
+night_mode.addEventListener("click",()=>{
+    changed_themes_to_night_mode("block","none","#00223A","#fff","#fff","rgb(0, 27, 47)","black");
+
+});
+
+ function changed_themes_to_day_mode(display1,color1 , color2 , color3, color4,classs,display2 ){
+   
+    night_mode.style.display = display1;
+    calc.style.background = color1;
+    operation.style.color = color2;
+    result.style.color = color3;
+    btn_content.style.background = color4;
+    for(let i = 0; i < b1.length; i++){
+       console.log(b1[i].classList.add(classs));
+
+      }
+      daytime_mode.style.display = display2;
+ }
+ function changed_themes_to_night_mode(display1, display2,color1 , color2 ,color3,color4,classs){
+   
+    daytime_mode.style.display = display1;
+    night_mode.style.display = display2;
+    calc.style.background = color1;
+    operation.style.color = color2;
+    result.style.color = color3;
+    btn_content.style.background = color4;
+    for(let i = 0; i < b1.length; i++){
+       b1[i].classList.remove(classs);
+    }
+ }
