@@ -15,18 +15,18 @@
         position: relative;
     }
     .display_content{
-      text-align: end;
-      width: 100%;
-      height: 181px;
-      /* background:#00223A ; */
-      position: relative;
+        text-align: end;
+        width: 100%;
+        height: 181px;
+        /* background:#00223A ; */
+        position: relative;
     
     }
     .daytime_mode{
         width: 55px;
         height: 61px;
         /* background: blue; */
-        font-size: 2.5em;
+        font-size: 2.2em;
         text-align: left;
         padding-left: 10px;
         padding-top: 0px;
@@ -58,10 +58,7 @@
         position: absolute;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
-    .operation span{
-
-        color: red;
-       }
+    
     .result{
         width: 100%;
         height: 40px;
@@ -83,6 +80,7 @@
         height: 77vh;
         border-radius: 21px 21px 0px 0px;
         background: rgb(0, 27, 47);
+        
 
     }
     .btn{
@@ -110,7 +108,51 @@
         border: 3px solid #C4C4C4;
        
     }
-    
+    .history{
+        width: 100%;
+        height: 100vh;
+        top: 0px;
+        background:#00223A ;
+        position: absolute;
+        display: none;
+    }
+    .clearr{
+        width: 58px;
+        height: 59px;
+        font-size: 2px,5em;
+        font-size: 3.8em;
+        line-height: 0px;
+        top: 8px;
+        left: 10px;
+        border: none;
+        background: rgba(255, 255, 255, 0);
+        color: rgba(230, 91, 70, 0.989);
+        position:absolute;
+    }
+    .clearr span{
+        font-size: 0.7em;
+        left: 16px;
+        color: rgba(230, 91, 70, 0.989);
+        position: absolute;
+    }
+    .history_content{
+        width: 100%;
+        height: 400px;
+        /* background: red; */
+    }
+    .operation_history{
+        width: 100%;
+        height: 45px;
+        font-size: 2em;
+        text-align: end;
+        padding-right: 26px;
+        color: #fff;
+    }
+    li span{
+        font-size: 0.5em;
+        padding-top: 3px;
+        padding-right: 9px;
+    }
     .coloRed{
         color: #FF6060;
         font-size: 1.2em;

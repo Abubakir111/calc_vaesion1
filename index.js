@@ -6,11 +6,15 @@ let result = document.querySelector(".result");
 let operation = document.querySelector(".operation");
 let night_mode = document.querySelector(".night_mode");
 let target;
+let clearr = document.querySelector(".clearr");
+let history = document.querySelector(".history");
+let operation_history = document.querySelector(".operation_history");
+let mas =  [];
 
 btn_content.addEventListener("click",(event)=>{
- 
     if(!event.target.classList.contains("btn")) return;
     target = event.target.innerText;
+    // console.log(target);
 
      switch(target){
          case "C":
@@ -53,11 +57,23 @@ btn_content.addEventListener("click",(event)=>{
              else result.innerText += target;
             break; 
         case "=":
-            // result.style.fontSize = "2em";
-            // result.style. fontWeight = "bold";
-            operation.innerText = result.innerText
-            result.innerText = eval(result.innerText).toFixed(3);
-            break;       
+            operation.innerText = result.innerText;
+            result.innerText = eval(result.innerText).toFixed(0);
+            if(!operation.innerText == "" && !result.innerText == ""){
+                mas.push(`<li> <span>&#9899</span>${operation.innerText} <br> = ${result.innerText}</li>`);
+                for(let i = 0; i  < mas.length; i++){
+                        console.log(mas[i]);
+                        operation_history.innerHTML += mas[i];
+                        mas =[];
+                    
+                }
+              
+            }
+            break;
+        case "↺":
+            if(result.innerText == "") result.innerText = "";
+                history.style.display = "block";
+               break;       
              default:
                 result.innerText += target;
         }
@@ -98,3 +114,4 @@ night_mode.addEventListener("click",()=>{
        b1[i].classList.remove(classs);
     }
  }
+clearr.addEventListener("click",()=>{ history.style.display = "none";});
