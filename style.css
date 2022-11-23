@@ -119,22 +119,18 @@
     .clearr{
         width: 58px;
         height: 59px;
-        font-size: 2px,5em;
-        font-size: 3.8em;
-        line-height: 0px;
         top: 8px;
         left: 10px;
         border: none;
         background: rgba(255, 255, 255, 0);
-        color: rgba(230, 91, 70, 0.989);
         position:absolute;
     }
-    .clearr span{
-        font-size: 0.7em;
-        left: 16px;
-        color: rgba(230, 91, 70, 0.989);
-        position: absolute;
+    .img_clear{
+        width: 60px;
+        height: 60px;
+        color: red;
     }
+    
     .history_content{
         width: 100%;
         height: 400px;
