@@ -83,11 +83,15 @@ btn_content.addEventListener("click",(event)=>{
 });
 daytime_mode.addEventListener("click",()=>{
     changed_themes_to_day_mode("block","#FAFAFA","black","black","#E9F6FF","black" ,"none");
+    history.style.background = "#fff";
+    clear_history_button.style.background = "rgb(233, 246, 255)";
    
 });
 
 night_mode.addEventListener("click",()=>{
     changed_themes_to_night_mode("block","none","#00223A","#fff","#fff","rgb(0, 27, 47)","black");
+    history.style.background = "rgb(0, 27, 47)";
+    clear_history_button.style.background = "#28b2e7";
 
 });
 
