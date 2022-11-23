@@ -110,35 +110,41 @@
     }
     .history{
         width: 100%;
-        height: 100vh;
+        height: 102vh;
         top: 0px;
-        background:#00223A ;
+        background: #00223A;
         position: absolute;
         display: none;
+    }
+    .h1{
+        font-size: 1.6em;
+        width: 97px;
+        height: 30px;
+        margin: auto;
+        margin-bottom: 11px;
+        color: #fff;
     }
     .close_history{
         width: 58px;
         height: 59px;
-        top: 8px;
-        left: 10px;
+        font-size: 3.2em;
         border: none;
         background: rgba(255, 255, 255, 0);
-        position:absolute;
+        margin-left: 190px;
     }
-    .img_clear{
-        width: 60px;
-        height: 60px;
-        color: red;
-    }
+  
     
     .history_content{
         width: 100%;
-         height: 94vh
+        height: 86vh;
+        overflow-y: scroll;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
     }
     .operation_history{
         width: 100%;
         height: 45px;
-        font-size: 2em;
+        font-size: 1.4em;
         text-align: end;
         padding-right: 26px;
         color: #fff;
@@ -147,6 +153,11 @@
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         color: #a4a9b9;;
         
+    }
+    img{
+        width: 74px;
+        height: 51px;
+       
     }
 
     .hr{
@@ -161,16 +172,6 @@
         color: #FF6060;
         font-size: 1.2em;
     }
-    .clear_history_button{
-    width: 234px;
-    height: 54px;
-    font-size: 1.3em;
-    font-weight: 700;
-    margin-left: 62px;
-    border-radius: 25px;
-    background: #28b2e7;
-    color: #212428;
-}
     
     .colorBlue{
         color: #00B0D7;
