@@ -6,9 +6,11 @@ let result = document.querySelector(".result");
 let operation = document.querySelector(".operation");
 let night_mode = document.querySelector(".night_mode");
 let target;
-let clearr = document.querySelector(".clearr");
+let close_history = document.querySelector(".close_history");
 let history = document.querySelector(".history");
 let operation_history = document.querySelector(".operation_history");
+let clear_history_button = document.querySelector(".clear_history_button"); 
+let li = document.querySelectorAll("li");
 let mas =  [];
 
 btn_content.addEventListener("click",(event)=>{
@@ -114,4 +116,7 @@ night_mode.addEventListener("click",()=>{
        b1[i].classList.remove(classs);
     }
  }
-clearr.addEventListener("click",()=>{ history.style.display = "none";});
+ close_history.addEventListener("click",()=>{ history.style.display = "none";});
+clear_history_button.addEventListener("click",()=>{
+   operation_history.innerHTML = "";
+});
