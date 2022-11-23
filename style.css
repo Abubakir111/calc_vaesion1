@@ -144,10 +144,19 @@
         padding-right: 26px;
         color: #fff;
     }
-    li span{
-        font-size: 0.5em;
-        padding-top: 3px;
-        padding-right: 9px;
+    li{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #a4a9b9;;
+        
+    }
+
+    .hr{
+        width: 126px;
+        height: 1px;
+        background: #ddd4dd;
+        display: block;
+        margin-left: 228px;
+        
     }
     .coloRed{
         color: #FF6060;

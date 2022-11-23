@@ -60,7 +60,7 @@ btn_content.addEventListener("click",(event)=>{
             operation.innerText = result.innerText;
             result.innerText = eval(result.innerText).toFixed(0);
             if(!operation.innerText == "" && !result.innerText == ""){
-                mas.push(`<li> <span>&#9899</span>${operation.innerText} <br> = ${result.innerText}</li>`);
+                mas.push(`<li>${operation.innerText} <br> = ${result.innerText}<div class = "hr"></div></li>`);
                 for(let i = 0; i  < mas.length; i++){
                         console.log(mas[i]);
                         operation_history.innerHTML += mas[i];
