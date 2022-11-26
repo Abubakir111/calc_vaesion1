@@ -11,8 +11,10 @@ let history = document.querySelector(".history");
 let operation_history = document.querySelector(".operation_history");
 let clear_history_button = document.querySelector(".clear_history_button"); 
 let li = document.querySelectorAll("li");
+h1 = document.querySelector(".h1");
 let mas =  [];
 
+console.log(h1);
 btn_content.addEventListener("click",(event)=>{
     if(!event.target.classList.contains("btn")) return;
     target = event.target.innerText;
@@ -84,6 +86,7 @@ btn_content.addEventListener("click",(event)=>{
 daytime_mode.addEventListener("click",()=>{
     changed_themes_to_day_mode("block","#FAFAFA","black","black","#E9F6FF","black" ,"none");
     history.style.background = "#fff";
+    h1.style.color = "#7d777e";
     clear_history_button.style.background = "rgb(233, 246, 255)";
    
 });
